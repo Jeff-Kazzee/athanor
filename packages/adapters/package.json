@@ -1,0 +1,22 @@
+{
+  "name": "@athanor/adapters",
+  "version": "0.1.0",
+  "description": "Provider adapters: OpenRouter, CLI agents, local models",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@athanor/core": "*",
+    "openai": "^4.80.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}

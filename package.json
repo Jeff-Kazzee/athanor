@@ -1,0 +1,30 @@
+{
+  "name": "athanor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first AI agent manager with self-improving experiment loops",
+  "author": "Jeff Kazzee <jeffkazzee@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffkazzee/athanor"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "packageManager": "npm@10.9.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

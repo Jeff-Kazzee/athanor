@@ -1,0 +1,23 @@
+{
+  "name": "@athanor/core",
+  "version": "0.1.0",
+  "description": "Core logic: providers, experiments, scoring, storage",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "vitest": "^3.0.0"
+  }
+}

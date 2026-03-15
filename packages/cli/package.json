@@ -1,0 +1,27 @@
+{
+  "name": "athanor",
+  "version": "0.1.0",
+  "description": "AI agent manager with self-improving experiment loops",
+  "type": "module",
+  "bin": {
+    "athanor": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@athanor/core": "*",
+    "@athanor/adapters": "*",
+    "commander": "^13.0.0",
+    "chalk": "^5.4.0",
+    "ora": "^8.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}
